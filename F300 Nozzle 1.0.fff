@@ -1,0 +1,917 @@
+<?xml version="1.0"?>
+<profile name="F300 Nozzle 1.0" version="2019-02-18 12:09:05" app="S3D-Software ">
+  <baseProfile>Default</baseProfile>
+  <printMaterial>PLA</printMaterial>
+  <printQuality>Normal 0.5</printQuality>
+  <printExtruders></printExtruders>
+  <extruder name="Main extruder">
+    <toolheadNumber>0</toolheadNumber>
+    <diameter>1</diameter>
+    <autoWidth>0</autoWidth>
+    <width>1.1</width>
+    <extrusionMultiplier>1.04</extrusionMultiplier>
+    <useRetract>1</useRetract>
+    <retractionDistance>1.9</retractionDistance>
+    <extraRestartDistance>0.05</extraRestartDistance>
+    <retractionZLift>0.3</retractionZLift>
+    <retractionSpeed>4800</retractionSpeed>
+    <useCoasting>0</useCoasting>
+    <coastingDistance>0.1</coastingDistance>
+    <useWipe>0</useWipe>
+    <wipeDistance>5</wipeDistance>
+  </extruder>
+  <primaryExtruder>0</primaryExtruder>
+  <layerHeight>0.5</layerHeight>
+  <topSolidLayers>3</topSolidLayers>
+  <bottomSolidLayers>2</bottomSolidLayers>
+  <perimeterOutlines>2</perimeterOutlines>
+  <printPerimetersInsideOut>1</printPerimetersInsideOut>
+  <startPointOption>2</startPointOption>
+  <startPointOriginX>0</startPointOriginX>
+  <startPointOriginY>0</startPointOriginY>
+  <sequentialIslands>0</sequentialIslands>
+  <spiralVaseMode>0</spiralVaseMode>
+  <firstLayerHeightPercentage>80</firstLayerHeightPercentage>
+  <firstLayerWidthPercentage>150</firstLayerWidthPercentage>
+  <firstLayerUnderspeed>0.75</firstLayerUnderspeed>
+  <useRaft>0</useRaft>
+  <raftExtruder>0</raftExtruder>
+  <raftTopLayers>2</raftTopLayers>
+  <raftBaseLayers>0</raftBaseLayers>
+  <raftOffset>3</raftOffset>
+  <raftSeparationDistance>0.5</raftSeparationDistance>
+  <raftTopInfill>100</raftTopInfill>
+  <aboveRaftSpeedMultiplier>0.3</aboveRaftSpeedMultiplier>
+  <useSkirt>1</useSkirt>
+  <skirtExtruder>0</skirtExtruder>
+  <skirtLayers>1</skirtLayers>
+  <skirtOutlines>2</skirtOutlines>
+  <skirtOffset>3</skirtOffset>
+  <usePrimePillar>0</usePrimePillar>
+  <primePillarExtruder>999</primePillarExtruder>
+  <primePillarWidth>12</primePillarWidth>
+  <primePillarLocation>7</primePillarLocation>
+  <primePillarSpeedMultiplier>1</primePillarSpeedMultiplier>
+  <useOozeShield>0</useOozeShield>
+  <oozeShieldExtruder>999</oozeShieldExtruder>
+  <oozeShieldOffset>2</oozeShieldOffset>
+  <oozeShieldOutlines>1</oozeShieldOutlines>
+  <oozeShieldSidewallShape>1</oozeShieldSidewallShape>
+  <oozeShieldSidewallAngle>30</oozeShieldSidewallAngle>
+  <oozeShieldSpeedMultiplier>1</oozeShieldSpeedMultiplier>
+  <infillExtruder>0</infillExtruder>
+  <internalInfillPattern>Rectilinear</internalInfillPattern>
+  <externalInfillPattern>Rectilinear</externalInfillPattern>
+  <infillPercentage>25</infillPercentage>
+  <outlineOverlapPercentage>20</outlineOverlapPercentage>
+  <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage>
+  <minInfillLength>0</minInfillLength>
+  <infillLayerInterval>1</infillLayerInterval>
+  <internalInfillAngles>45,-45</internalInfillAngles>
+  <overlapInternalInfillAngles>0</overlapInternalInfillAngles>
+  <externalInfillAngles>45,-45</externalInfillAngles>
+  <generateSupport>1</generateSupport>
+  <supportExtruder>0</supportExtruder>
+  <supportInfillPercentage>20</supportInfillPercentage>
+  <supportExtraInflation>0.5</supportExtraInflation>
+  <supportBaseLayers>1</supportBaseLayers>
+  <denseSupportExtruder>0</denseSupportExtruder>
+  <denseSupportLayers>3</denseSupportLayers>
+  <denseSupportInfillPercentage>50</denseSupportInfillPercentage>
+  <supportLayerInterval>1</supportLayerInterval>
+  <supportHorizontalPartOffset>0.8</supportHorizontalPartOffset>
+  <supportUpperSeparationLayers>1</supportUpperSeparationLayers>
+  <supportLowerSeparationLayers>1</supportLowerSeparationLayers>
+  <supportType>0</supportType>
+  <supportGridSpacing>2.5</supportGridSpacing>
+  <maxOverhangAngle>60</maxOverhangAngle>
+  <supportAngles>0</supportAngles>
+  <temperatureController name="Hotend Temperature">
+    <temperatureNumber>0</temperatureNumber>
+    <isHeatedBed>0</isHeatedBed>
+    <stabilizeAtStartup>1</stabilizeAtStartup>
+    <setpoint layer="1" temperature="245"/>
+  </temperatureController>
+  <temperatureController name="Heated Bed">
+    <temperatureNumber>1</temperatureNumber>
+    <isHeatedBed>1</isHeatedBed>
+    <stabilizeAtStartup>1</stabilizeAtStartup>
+    <setpoint layer="1" temperature="60"/>
+  </temperatureController>
+  <fanSpeed>
+    <setpoint layer="1" speed="0"/>
+    <setpoint layer="2" speed="80"/>
+  </fanSpeed>
+  <blipFanToFullPower>1</blipFanToFullPower>
+  <adjustSpeedForCooling>1</adjustSpeedForCooling>
+  <minSpeedLayerTime>15</minSpeedLayerTime>
+  <minCoolingSpeedSlowdown>75</minCoolingSpeedSlowdown>
+  <increaseFanForCooling>1</increaseFanForCooling>
+  <minFanLayerTime>25</minFanLayerTime>
+  <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
+  <increaseFanForBridging>1</increaseFanForBridging>
+  <bridgingFanSpeed>100</bridgingFanSpeed>
+  <use5D>1</use5D>
+  <relativeEdistances>0</relativeEdistances>
+  <allowEaxisZeroing>1</allowEaxisZeroing>
+  <independentExtruderAxes>0</independentExtruderAxes>
+  <includeM10123>0</includeM10123>
+  <stickySupport>1</stickySupport>
+  <applyToolheadOffsets>0</applyToolheadOffsets>
+  <gcodeXoffset>0</gcodeXoffset>
+  <gcodeYoffset>0</gcodeYoffset>
+  <gcodeZoffset>0</gcodeZoffset>
+  <overrideMachineDefinition>1</overrideMachineDefinition>
+  <machineTypeOverride>0</machineTypeOverride>
+  <strokeXoverride>300</strokeXoverride>
+  <strokeYoverride>300</strokeYoverride>
+  <strokeZoverride>300</strokeZoverride>
+  <originOffsetXoverride>0</originOffsetXoverride>
+  <originOffsetYoverride>0</originOffsetYoverride>
+  <originOffsetZoverride>0</originOffsetZoverride>
+  <homeXdirOverride>-1</homeXdirOverride>
+  <homeYdirOverride>-1</homeYdirOverride>
+  <homeZdirOverride>-1</homeZdirOverride>
+  <flipXoverride>1</flipXoverride>
+  <flipYoverride>-1</flipYoverride>
+  <flipZoverride>1</flipZoverride>
+  <toolheadOffsets>0,0|0,0|0,0|0,0|0,0|0,0</toolheadOffsets>
+  <overrideFirmwareConfiguration>1</overrideFirmwareConfiguration>
+  <firmwareTypeOverride>RepRap (Marlin/Repetier/Sprinter)</firmwareTypeOverride>
+  <GPXconfigOverride>r2</GPXconfigOverride>
+  <baudRateOverride>115200</baudRateOverride>
+  <overridePrinterModels>0</overridePrinterModels>
+  <printerModelsOverride></printerModelsOverride>
+  <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M150			; ventilation on,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+  <layerChangeGcode></layerChangeGcode>
+  <retractionGcode></retractionGcode>
+  <toolChangeGcode></toolChangeGcode>
+  <endingGcode>M104 S0 ; turn off extruder,M140 S0 ; turn off bed,M107 ; turn off fan,G91,G1 E-1 F300,G1 Z10,G28 XY,G90,M84 ; disable motors,</endingGcode>
+  <exportFileFormat>gcode</exportFileFormat>
+  <celebration>0</celebration>
+  <celebrationSong>Random Song</celebrationSong>
+  <postProcessing></postProcessing>
+  <defaultSpeed>2700</defaultSpeed>
+  <outlineUnderspeed>0.75</outlineUnderspeed>
+  <solidInfillUnderspeed>0.6</solidInfillUnderspeed>
+  <supportUnderspeed>0.9</supportUnderspeed>
+  <rapidXYspeed>10800</rapidXYspeed>
+  <rapidZspeed>1002</rapidZspeed>
+  <minBridgingArea>25</minBridgingArea>
+  <bridgingExtraInflation>0</bridgingExtraInflation>
+  <bridgingExtrusionMultiplier>0.9</bridgingExtrusionMultiplier>
+  <bridgingSpeedMultiplier>0.75</bridgingSpeedMultiplier>
+  <useFixedBridgingAngle>0</useFixedBridgingAngle>
+  <fixedBridgingAngle>0</fixedBridgingAngle>
+  <applyBridgingToPerimeters>1</applyBridgingToPerimeters>
+  <filamentDiameters>2.85|2.85|2.85|2.85|2.85|2.85</filamentDiameters>
+  <filamentPricesPerKg>140|140|140|140|140|140</filamentPricesPerKg>
+  <filamentDensities>1.24|1.24|1.24|1.24|1.24|1.24</filamentDensities>
+  <useMinPrintHeight>0</useMinPrintHeight>
+  <minPrintHeight>10</minPrintHeight>
+  <useMaxPrintHeight>0</useMaxPrintHeight>
+  <maxPrintHeight>10</maxPrintHeight>
+  <useDiaphragm>0</useDiaphragm>
+  <diaphragmLayerInterval>20</diaphragmLayerInterval>
+  <robustSlicing>1</robustSlicing>
+  <mergeAllIntoSolid>0</mergeAllIntoSolid>
+  <onlyRetractWhenCrossingOutline>0</onlyRetractWhenCrossingOutline>
+  <retractBetweenLayers>1</retractBetweenLayers>
+  <useRetractionMinTravel>1</useRetractionMinTravel>
+  <retractionMinTravel>1.2</retractionMinTravel>
+  <retractWhileWiping>0</retractWhileWiping>
+  <onlyWipeOutlines>1</onlyWipeOutlines>
+  <avoidCrossingOutline>0</avoidCrossingOutline>
+  <maxMovementDetourFactor>3</maxMovementDetourFactor>
+  <toolChangeRetractionDistance>12</toolChangeRetractionDistance>
+  <toolChangeExtraRestartDistance>-0.5</toolChangeExtraRestartDistance>
+  <toolChangeRetractionSpeed>600</toolChangeRetractionSpeed>
+  <externalThinWallType>1</externalThinWallType>
+  <internalThinWallType>1</internalThinWallType>
+  <thinWallAllowedOverlapPercentage>65</thinWallAllowedOverlapPercentage>
+  <singleExtrusionMinLength>0</singleExtrusionMinLength>
+  <singleExtrusionMinPrintingWidthPercentage>50</singleExtrusionMinPrintingWidthPercentage>
+  <singleExtrusionMaxPrintingWidthPercentage>200</singleExtrusionMaxPrintingWidthPercentage>
+  <singleExtrusionEndpointExtension>0.2</singleExtrusionEndpointExtension>
+  <horizontalSizeCompensation>0</horizontalSizeCompensation>
+  <autoConfigureMaterial name="PLA">
+    <temperatureController name="Hotend Temperature">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="245"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="60"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="80"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>1</diameter>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.04</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.9</retractionDistance>
+      <extraRestartDistance>0.05</extraRestartDistance>
+      <retractionZLift>0.3</retractionZLift>
+      <retractionSpeed>4800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.75</firstLayerUnderspeed>
+    <skirtOutlines>2</skirtOutlines>
+    <skirtOffset>3</skirtOffset>
+    <defaultSpeed>2700</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
+    <solidInfillUnderspeed>0.6</solidInfillUnderspeed>
+    <supportUnderspeed>0.9</supportUnderspeed>
+    <supportAngles>0</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+    <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
+    <bridgingFanSpeed>100</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M150			; ventilation on,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>140|140|140|140|140|140</filamentPricesPerKg>
+    <filamentDensities>1.24|1.24|1.24|1.24|1.24|1.24</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="PLA-X">
+  <temperatureController name="Hotend Temperature">
+    <setpoint layer="1" temperature="280"/>
+  </temperatureController>
+  <temperatureController name="Heated Bed">
+    <setpoint layer="1" temperature="60"/>
+  </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="80"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.04</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.9</retractionDistance>
+      <extraRestartDistance>0.05</extraRestartDistance>
+      <retractionZLift>0.3</retractionZLift>
+      <retractionSpeed>4800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.75</firstLayerUnderspeed>
+    <skirtOutlines>2</skirtOutlines>
+    <skirtOffset>3</skirtOffset>
+    <defaultSpeed>3000</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
+    <solidInfillUnderspeed>0.6</solidInfillUnderspeed>
+    <supportUnderspeed>0.9</supportUnderspeed>
+    <supportAngles>0</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+	<maxCoolingFanSpeed>100</maxCoolingFanSpeed>
+<bridgingFanSpeed>100</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M150			; ventilation on,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>140|140|140|140|140|140</filamentPricesPerKg>
+    <filamentDensities>1.24|1.24|1.24|1.24|1.24|1.24</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="ABS">
+    <temperatureController name="Hotend Temperature">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="295"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="90"/>
+      <setpoint layer="3" temperature="100"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="3" speed="20"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>1</diameter>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.08</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.9</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.3</retractionZLift>
+      <retractionSpeed>3600</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.75</firstLayerUnderspeed>
+    <skirtOutlines>2</skirtOutlines>
+    <skirtOffset>3</skirtOffset>
+    <defaultSpeed>2400</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
+    <solidInfillUnderspeed>0.6</solidInfillUnderspeed>
+    <supportUnderspeed>0.9</supportUnderspeed>
+    <supportAngles>0</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+    <maxCoolingFanSpeed>25</maxCoolingFanSpeed>
+    <bridgingFanSpeed>25</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M151			; ventilation off,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>120|120|120|120|120|120</filamentPricesPerKg>
+    <filamentDensities>1.03|1.03|1.03|1.03|1.03|1.03</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="ABS-X">
+    <temperatureController name="Hotend Temperature">
+    <setpoint layer="1" temperature="290"/>
+  </temperatureController>
+  <temperatureController name="Heated Bed">
+    <setpoint layer="1" temperature="75"/>
+      <setpoint layer="3" temperature="85"/>
+  </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="3" speed="20"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.06</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.9</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.3</retractionZLift>
+      <retractionSpeed>3600</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.75</firstLayerUnderspeed>
+    <skirtOutlines>2</skirtOutlines>
+    <skirtOffset>3</skirtOffset>
+    <defaultSpeed>2400</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
+    <solidInfillUnderspeed>0.6</solidInfillUnderspeed>
+    <supportUnderspeed>0.9</supportUnderspeed>
+    <supportAngles>0</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+	<maxCoolingFanSpeed>25</maxCoolingFanSpeed>
+<bridgingFanSpeed>25</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M151			; ventilation off,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>170|170|170|170|170|170</filamentPricesPerKg>
+    <filamentDensities>1.1|1.1|1.1|1.1|1.1|1.1</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="ASA-X">
+    <temperatureController name="Hotend Temperature">
+    <setpoint layer="1" temperature="285"/>
+  </temperatureController>
+  <temperatureController name="Heated Bed">
+    <setpoint layer="1" temperature="75"/>
+      <setpoint layer="3" temperature="85"/>
+  </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="3" speed="20"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.06</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.9</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.3</retractionZLift>
+      <retractionSpeed>3600</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.75</firstLayerUnderspeed>
+    <skirtOutlines>2</skirtOutlines>
+    <skirtOffset>3</skirtOffset>
+    <defaultSpeed>2700</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
+    <solidInfillUnderspeed>0.6</solidInfillUnderspeed>
+    <supportUnderspeed>0.9</supportUnderspeed>
+    <supportAngles>0</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+	<maxCoolingFanSpeed>25</maxCoolingFanSpeed>
+<bridgingFanSpeed>25</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M151			; ventilation off,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>170|170|170|170|170|170</filamentPricesPerKg>
+    <filamentDensities>1.11|1.11|1.11|1.11|1.11|1.11</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="PC-ABS">
+    <temperatureController name="Hotend Temperature">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="295"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="90"/>
+      <setpoint layer="3" temperature="100"/>
+      <setpoint layer="4" temperature="110"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>1</diameter>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.08</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.9</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.3</retractionZLift>
+      <retractionSpeed>3600</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.75</firstLayerUnderspeed>
+    <skirtOutlines>2</skirtOutlines>
+    <skirtOffset>3</skirtOffset>
+    <defaultSpeed>1800</defaultSpeed>
+    <outlineUnderspeed>0.5</outlineUnderspeed>
+    <solidInfillUnderspeed>0.5</solidInfillUnderspeed>
+    <supportUnderspeed>0.9</supportUnderspeed>
+    <supportAngles>0</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+    <maxCoolingFanSpeed>25</maxCoolingFanSpeed>
+    <bridgingFanSpeed>25</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M151			; ventilation off,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>120|120|120|120|120|120</filamentPricesPerKg>
+    <filamentDensities>1.03|1.03|1.03|1.03|1.03|1.03</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="PA12">
+    <temperatureController name="Hotend Temperature">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="295"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="90"/>
+      <setpoint layer="3" temperature="100"/>
+      <setpoint layer="4" temperature="110"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>1</diameter>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.03</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.7</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.5</retractionZLift>
+      <retractionSpeed>3600</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+    <skirtOutlines>9</skirtOutlines>
+    <skirtOffset>0</skirtOffset>
+    <defaultSpeed>2400</defaultSpeed>
+    <outlineUnderspeed>0.5</outlineUnderspeed>
+    <solidInfillUnderspeed>0.5</solidInfillUnderspeed>
+    <supportUnderspeed>0.9</supportUnderspeed>
+    <supportAngles>0</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+    <maxCoolingFanSpeed>25</maxCoolingFanSpeed>
+    <bridgingFanSpeed>25</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M151			; ventilation off,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X280 E20 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>199|120|120|120|120|120</filamentPricesPerKg>
+    <filamentDensities>1.03|1.03|1.03|1.03|1.03|1.03</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="PET-G">
+    <temperatureController name="Hotend Temperature">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="275"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="70"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="3" speed="40"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>1</diameter>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.05</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.9</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.3</retractionZLift>
+      <retractionSpeed>2400</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+    <skirtOutlines>2</skirtOutlines>
+    <skirtOffset>3</skirtOffset>
+    <defaultSpeed>2400</defaultSpeed>
+    <outlineUnderspeed>0.6</outlineUnderspeed>
+    <solidInfillUnderspeed>0.6</solidInfillUnderspeed>
+    <supportUnderspeed>0.75</supportUnderspeed>
+    <supportAngles>0</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+    <maxCoolingFanSpeed>45</maxCoolingFanSpeed>
+    <bridgingFanSpeed>45</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M151			; ventilation off,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>170|170|170|170|170|170</filamentPricesPerKg>
+    <filamentDensities>1.27|1.27|1.27|1.27|1.27|1.27</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="PET-ESD">
+    <temperatureController name="Hotend Temperature">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="295"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="70"/>
+      <setpoint layer="3" temperature="80"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="3" speed="40"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>1</diameter>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.07</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.9</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.3</retractionZLift>
+      <retractionSpeed>2400</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+    <skirtOutlines>2</skirtOutlines>
+    <skirtOffset>3</skirtOffset>
+    <defaultSpeed>2400</defaultSpeed>
+    <outlineUnderspeed>0.6</outlineUnderspeed>
+    <solidInfillUnderspeed>0.6</solidInfillUnderspeed>
+    <supportUnderspeed>0.75</supportUnderspeed>
+    <supportAngles>0</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+    <maxCoolingFanSpeed>45</maxCoolingFanSpeed>
+    <bridgingFanSpeed>45</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M151			; ventilation off,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>170|170|170|170|170|170</filamentPricesPerKg>
+    <filamentDensities>1.27|1.27|1.27|1.27|1.27|1.27</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="HIPS">
+  <temperatureController name="Hotend Temperature">
+    <setpoint layer="1" temperature="285"/>
+  </temperatureController>
+  <temperatureController name="Heated Bed">
+    <setpoint layer="1" temperature="75"/>
+      <setpoint layer="3" temperature="85"/>
+  </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="3" speed="30"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.05</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.7</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.3</retractionZLift>
+      <retractionSpeed>3600</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+    <skirtOutlines>2</skirtOutlines>
+    <skirtOffset>3</skirtOffset>
+    <defaultSpeed>2700</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
+    <solidInfillUnderspeed>0.6</solidInfillUnderspeed>
+    <supportUnderspeed>0.8</supportUnderspeed>
+    <supportAngles>0</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+	<maxCoolingFanSpeed>40</maxCoolingFanSpeed>
+<bridgingFanSpeed>40</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M151			; ventilation off,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>170|170|170|170|170|170</filamentPricesPerKg>
+    <filamentDensities>1.04|1.04|1.04|1.04|1.04|1.04</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="TPU">
+    <temperatureController name="Hotend Temperature">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="247"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="65"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="80"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>1</diameter>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.08</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>2.5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.3</retractionZLift>
+      <retractionSpeed>3000</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+    <skirtOutlines>4</skirtOutlines>
+    <skirtOffset>4</skirtOffset>
+    <defaultSpeed>2400</defaultSpeed>
+    <outlineUnderspeed>0.5</outlineUnderspeed>
+    <solidInfillUnderspeed>0.75</solidInfillUnderspeed>
+    <supportUnderspeed>0.75</supportUnderspeed>
+    <supportAngles>0,0,0,0,0,90,90</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+    <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
+    <bridgingFanSpeed>100</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M150			; ventilation on,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>170|170|170|170|170|170</filamentPricesPerKg>
+    <filamentDensities>1.2|1.2|1.2|1.2|1.2|1.2</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="PP">
+    <temperatureController name="Hotend Temperature">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="247"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="95"/>
+      <setpoint layer="2" temperature="105"/>
+    </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="80"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>1</diameter>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.12</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.8</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.3</retractionZLift>
+      <retractionSpeed>3000</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+    <skirtOutlines>4</skirtOutlines>
+    <skirtOffset>4</skirtOffset>
+    <defaultSpeed>2100</defaultSpeed>
+    <outlineUnderspeed>0.5</outlineUnderspeed>
+    <solidInfillUnderspeed>0.5</solidInfillUnderspeed>
+    <supportUnderspeed>0.75</supportUnderspeed>
+    <supportAngles>0,0,0,0,0,90,90</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+    <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
+    <bridgingFanSpeed>100</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M150			; ventilation on,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>170|170|170|170|170|170</filamentPricesPerKg>
+    <filamentDensities>0.9|1.2|1.2|1.2|1.2|1.2</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="H-GLASS">
+    <temperatureController name="Hotend Temperature">
+  <setpoint layer="1" temperature="295"/>
+  </temperatureController>
+  <temperatureController name="Heated Bed">
+    <setpoint layer="1" temperature="75"/>
+      <setpoint layer="3" temperature="85"/>
+  </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="3" speed="20"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.12</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>1.8</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.3</retractionZLift>
+      <retractionSpeed>2400</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+    <skirtOutlines>2</skirtOutlines>
+    <skirtOffset>3</skirtOffset>
+    <defaultSpeed>2700</defaultSpeed>
+    <outlineUnderspeed>0.6</outlineUnderspeed>
+    <solidInfillUnderspeed>0.6</solidInfillUnderspeed>
+    <supportUnderspeed>0.75</supportUnderspeed>
+    <supportAngles>0</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+	<maxCoolingFanSpeed>25</maxCoolingFanSpeed>
+<bridgingFanSpeed>25</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M151			; ventilation off,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>170|170|170|170|170|170</filamentPricesPerKg>
+    <filamentDensities>1.01|1.1|1.01|1.01|1.01|1.01</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="H-WOOD">
+  <temperatureController name="Hotend Temperature">
+    <setpoint layer="1" temperature="210"/>
+  </temperatureController>
+  <temperatureController name="Heated Bed">
+    <setpoint layer="1" temperature="55"/>
+  </temperatureController>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="80"/>
+    </fanSpeed>
+    <extruder name="Main extruder">
+      <toolheadNumber>0</toolheadNumber>
+      <autoWidth>0</autoWidth>
+      <width>1.1</width>
+      <extrusionMultiplier>1.06</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>2</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.3</retractionZLift>
+      <retractionSpeed>4800</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.1</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+    <skirtOutlines>2</skirtOutlines>
+    <skirtOffset>3</skirtOffset>
+    <defaultSpeed>3000</defaultSpeed>
+    <outlineUnderspeed>0.5</outlineUnderspeed>
+    <solidInfillUnderspeed>0.6</solidInfillUnderspeed>
+    <supportUnderspeed>0.75</supportUnderspeed>
+    <supportAngles>0</supportAngles>
+    <increaseFanForCooling>1</increaseFanForCooling>
+    <increaseFanForBridging>1</increaseFanForBridging>
+	<maxCoolingFanSpeed>100</maxCoolingFanSpeed>
+<bridgingFanSpeed>100</bridgingFanSpeed>
+    <gcodeZoffset>0</gcodeZoffset>
+    <startingGcode>;FOR FIRMWARE v2.2.0 or HIGHER,M107			; extruder fan off,M150			; ventilation on,G1 Z15 F7200 		; Z down 15mm,G28 XY			; home xy,G1 X15.0 Y0.0 F7200		; travel,G28 Z			; home Z,G92 E0			; zero extruded length,G1 X60 F1800		; wipe nozzle,G1 Z0.55			; lift nozzle,G1 X120 E7 F900		; extrude filament,G92 E0			; zero extruded length,G1 E-3 F3600			; retract 3mm,G1 Z0.55			; lift nozzle,G0 X150.0 Y150.0 F7200		; go to center,G28 Z			; home Z,G1 E0.0 F3600		; extrude back</startingGcode>
+    <filamentPricesPerKg>170|170|170|170|170|170</filamentPricesPerKg>
+    <filamentDensities>1.2|1.2|1.2|1.2|1.2|1.2</filamentDensities>
+  </autoConfigureMaterial>
+  <autoConfigureQuality name="Fast 0.65">
+    <layerHeight>0.65</layerHeight>
+    <topSolidLayers>3</topSolidLayers>
+    <bottomSolidLayers>2</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <perimeterOutlines>1</perimeterOutlines>
+    <firstLayerHeightPercentage>66</firstLayerHeightPercentage>
+    <infillPercentage>15</infillPercentage>
+    <infillLayerInterval>1</infillLayerInterval>
+    <supportUpperSeparationLayers>1</supportUpperSeparationLayers>
+    <supportLowerSeparationLayers>1</supportLowerSeparationLayers>
+    <supportInfillPercentage>20</supportInfillPercentage>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Normal 0.5">
+    <layerHeight>0.5</layerHeight>
+    <topSolidLayers>3</topSolidLayers>
+    <bottomSolidLayers>2</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <perimeterOutlines>2</perimeterOutlines>
+    <firstLayerHeightPercentage>80</firstLayerHeightPercentage>
+    <infillPercentage>25</infillPercentage>
+    <infillLayerInterval>1</infillLayerInterval>
+    <supportUpperSeparationLayers>1</supportUpperSeparationLayers>
+    <supportLowerSeparationLayers>1</supportLowerSeparationLayers>
+    <supportInfillPercentage>20</supportInfillPercentage>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="High 0.35">
+    <layerHeight>0.35</layerHeight>
+    <topSolidLayers>3</topSolidLayers>
+    <bottomSolidLayers>2</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <perimeterOutlines>2</perimeterOutlines>
+    <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
+    <infillPercentage>30</infillPercentage>
+    <infillLayerInterval>1</infillLayerInterval>
+    <supportUpperSeparationLayers>1</supportUpperSeparationLayers>
+    <supportLowerSeparationLayers>1</supportLowerSeparationLayers>
+    <supportInfillPercentage>30</supportInfillPercentage>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Ultra High 0.25">
+    <layerHeight>0.25</layerHeight>
+    <topSolidLayers>4</topSolidLayers>
+    <bottomSolidLayers>4</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <perimeterOutlines>2</perimeterOutlines>
+    <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
+    <infillPercentage>30</infillPercentage>
+    <infillLayerInterval>1</infillLayerInterval>
+    <supportUpperSeparationLayers>2</supportUpperSeparationLayers>
+    <supportLowerSeparationLayers>2</supportLowerSeparationLayers>
+    <supportInfillPercentage>30</supportInfillPercentage>
+  </autoConfigureQuality>
+  
+</profile>
