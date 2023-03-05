@@ -20,4 +20,4 @@ The material type may not match due to the g-code being generated on different s
 
 - [ ] Add a wiring diagram for strain gauges.
 - [ ] Add Cooling duct STL.
-- [ ] Add PrusaSlicer profiles for enhanced printing experience.
+- [ ] Improve PrusaSlicer profiles for better printing results.
