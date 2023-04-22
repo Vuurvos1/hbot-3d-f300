@@ -4,6 +4,12 @@ This repository contains Simplify 3D profiles and manuals in both English and Po
 
 If the print head runs into the build plate while leveling. This issue could very well be related to one or more of the strain gauges beeing broken or disconnected.
 
+## Importing profiles
+
+### Prusa Slicer
+
+Goto `File > Import > Import Config Bundle...` and select one of the profiles inside the PrusaSlicer folder.
+
 ## Known Issues
 
 ### Bed leveling Issue
