@@ -12,6 +12,19 @@ Goto `File > Import > Import Config Bundle...` and select one of the profiles in
 
 ## Known Issues
 
+### Prusa Slicer
+
+When exporting gcode with Prusa slicer all line endings will always be of type `lf` something which this printer does not support, this can be fixed by setting a postprocessor under output options like the following
+
+**Windows**
+
+```
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -File "<path to file>\PrusaSlicer\line_ending_postprocessor.ps1"
+```
+
+_Note:_
+I tried using gcode substitutions but this sadly doesn't seem to puck up on the `cr` character and inserts `lf` line endings instead
+
 ### Bed leveling Issue
 
 One I faced while repairing this printer was that the print head rams into the build plate while leveling. This issue is most likely related to one or more of the strain gauges inside the print head being broken or disconnected.
